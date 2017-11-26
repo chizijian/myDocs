@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lovelyhq.android.lovelydocs"
+    android:versionCode="31"
+    android:versionName="2.1.10">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.lovelyhq.android.lovelydocs.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.lovelyhq.android.lovelydocs.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.lovelyhq.lovelydocs.application.LovelyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.lovelyhq.lovelydocs.activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lovelyhq.lovelydocs.activities.DocsetsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.lovelyhq.lovelydocs.activities.MainActivity" />
+        <activity
+            android:name="com.lovelyhq.lovelydocs.activities.DocsetActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.lovelyhq.lovelydocs.activities.MainActivity" />
+        <activity
+            android:name="com.lovelyhq.lovelydocs.activities.SettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat"
+            android:parentActivityName="com.lovelyhq.lovelydocs.activities.MainActivity" />
+        <activity
+            android:name="com.lovelyhq.lovelydocs.activities.SearchActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.lovelyhq.lovelydocs.activities.DocsetActivity" />
+
+        <receiver android:name="com.lovelyhq.lovelydocs.receivers.ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lovelyhq.lovelydocs.receivers.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.lovelyhq.lovelydocs.services.DownloadService" />
+        <service android:name="com.lovelyhq.lovelydocs.services.UpdateService" />
+        <service
+            android:name="com.lovelyhq.lovelydocs.services.DeleteService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--  <activity
+              android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+              android:excludeFromRecents="true"
+              android:exported="false"
+              android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+          <service
+              android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+              android:exported="true"
+              android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+          <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+
+          <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+          <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+  -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.lovelyhq.android.lovelydocs" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.lovelyhq.android.lovelydocs.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <!--  <service
+              android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+              android:process=":background_crash" />
+          <service
+              android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+              android:process=":background_crash" />-->
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- <service
+             android:name="com.google.firebase.messaging.FirebaseMessagingService"
+             android:exported="true">
+             <intent-filter android:priority="-500">
+                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+             </intent-filter>
+         </service>
+         <service
+             android:name="com.google.android.gms.tagmanager.TagManagerService"
+             android:enabled="true"
+             android:exported="false" />-->
+        <!--<activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.lovelyhq.android.lovelydocs" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>-->
+        <!-- <activity
+             android:name="com.gun0912.tedpermission.TedPermissionActivity"
+             android:theme="@style/Theme.Transparent" />-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.asus_wh.docs_app.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="docs_app.SplashActivity"
+            android:theme="@style/SplashStyle">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="docs_app.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lovelyhq.lovelydocs.activities.MainActivity"></meta-data>
+        </activity>
+        <activity
+            android:name="docs_app.RegistActivity"
+            android:label="@string/title_activity_regist"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="docs_app.LoginActivity"></meta-data>
+        </activity>
+        <activity
+            android:name="docs_app.ForgotPswActivity"
+            android:label="@string/title_activity_forgot"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="docs_app.LoginActivity"></meta-data>
+        </activity>
+        <activity
+            android:name="docs_app.LoginSuccessActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
+
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+    </application>
+</manifest>

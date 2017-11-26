@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SystemSet</string>
+    <string name="information_update">信息修改</string>
+    <string name="night_model">夜间模式</string>
+    <string name="wlan_down">WLAN下载</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="auto_update">自動更新</string>
+    <string name="dowm_local">下载位置</string>
+    <string name="about_me">关于我们</string>
+    <string name="text_phone_has_no_browser">Your phone has no browser.</string>
+    <string name="MODE_NIGHT_YES">夜间模式.</string>
+    <string name="MODE_NIGHT_NO">日间模式.</string>
+    <string name="YES_WLAN">禁止流量下载.</string>
+    <string name="NO_WLAN">允许流量下载.</string>
+    <string name="YES_AUTO">自動更新啓動.</string>
+    <string name="NO_AUTO">自動更新關閉.</string>
+    <string name="logout">退出登陸</string>
+</resources>

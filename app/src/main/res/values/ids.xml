@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="action_bar_spinner" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="cast_button_type_closed_caption" />
+    <item type="id" name="cast_button_type_custom" />
+    <item type="id" name="cast_button_type_empty" />
+    <item type="id" name="cast_button_type_forward_30_seconds" />
+    <item type="id" name="cast_button_type_mute_toggle" />
+    <item type="id" name="cast_button_type_play_pause_toggle" />
+    <item type="id" name="cast_button_type_rewind_30_seconds" />
+    <item type="id" name="cast_button_type_skip_next" />
+    <item type="id" name="cast_button_type_skip_previous" />
+    <item type="id" name="cast_featurehighlight_help_text_body_view" />
+    <item type="id" name="cast_featurehighlight_help_text_header_view" />
+    <item type="id" name="cast_featurehighlight_view" />
+    <item type="id" name="cast_notification_id" />
+    <item type="id" name="crash_reporting_present" />
+    <item type="id" name="home" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="split_action_bar" />
+    <item type="id" name="up" />
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="buttonPanel">false</item>
+    <item type="id" name="spacer">false</item>
+    <item type="id" name="parentPanel">false</item>
+    <item type="id" name="topPanel">false</item>
+    <item type="id" name="title_template">false</item>
+    <item type="id" name="alertTitle">false</item>
+    <item type="id" name="contentPanel">false</item>
+    <item type="id" name="scrollIndicatorUp">false</item>
+    <item type="id" name="scrollView">false</item>
+    <item type="id" name="textSpacerNoButtons">false</item>
+    <item type="id" name="scrollIndicatorDown">false</item>
+    <item type="id" name="customPanel">false</item>
+    <item type="id" name="custom">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="submenuarrow">false</item>
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_mode_bar_stub">false</item>
+    <item type="id" name="action_mode_bar">false</item>
+    <item type="id" name="decor_content_parent">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="placeholder1">false</item>
+    <item type="id" name="placeholder2">false</item>
+    <item type="id" name="preparingLayout">false</item>
+    <item type="id" name="tvPremiumText">false</item>
+    <item type="id" name="imgPremium">false</item>
+    <item type="id" name="btnRestore">false</item>
+    <item type="id" name="btnPurchase">false</item>
+    <item type="id" name="expanded_controller_layout">false</item>
+    <item type="id" name="background_image_view">false</item>
+    <item type="id" name="toolbar">false</item>
+    <item type="id" name="controllers">false</item>
+    <item type="id" name="background_place_holder_image_view">false</item>
+    <item type="id" name="ad_container">false</item>
+    <item type="id" name="ad_label">false</item>
+    <item type="id" name="ad_in_progress_label">false</item>
+    <item type="id" name="loading_indicator">false</item>
+    <item type="id" name="status_text">false</item>
+    <item type="id" name="seek_bar_controls">false</item>
+    <item type="id" name="start_text">false</item>
+    <item type="id" name="end_text">false</item>
+    <item type="id" name="live_stream_indicator">false</item>
+    <item type="id" name="seek_bar">false</item>
+    <item type="id" name="live_stream_seek_bar">false</item>
+    <item type="id" name="button_0">false</item>
+    <item type="id" name="button_1">false</item>
+    <item type="id" name="button_play_pause_toggle">false</item>
+    <item type="id" name="button_2">false</item>
+    <item type="id" name="button_3">false</item>
+    <item type="id" name="textTitle">false</item>
+    <item type="id" name="button">false</item>
+    <item type="id" name="container_all">false</item>
+    <item type="id" name="container_current">false</item>
+    <item type="id" name="center">false</item>
+    <item type="id" name="icon_view">false</item>
+    <item type="id" name="title_view">false</item>
+    <item type="id" name="subtitle_view">false</item>
+    <item type="id" name="progressBar">false</item>
+    <item type="id" name="tab_host">false</item>
+    <item type="id" name="text_list_view">false</item>
+    <item type="id" name="audio_list_view">false</item>
+    <item type="id" name="text_empty_message">false</item>
+    <item type="id" name="audio_empty_message">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="spinVersions">false</item>
+    <item type="id" name="layoutFetchingVersions">false</item>
+    <item type="id" name="wvDetails">false</item>
+    <item type="id" name="btnGoBack">false</item>
+    <item type="id" name="lvDocsetMenu">false</item>
+    <item type="id" name="tvNoInternet">false</item>
+    <item type="id" name="lvDocsets">false</item>
+    <item type="id" name="empty">false</item>
+    <item type="id" name="bottomBar">false</item>
+    <item type="id" name="btnDocsets">false</item>
+    <item type="id" name="btnSettings">false</item>
+    <item type="id" name="tvSubtitle1">false</item>
+    <item type="id" name="checkBox1">false</item>
+    <item type="id" name="tvSubtitle2">false</item>
+    <item type="id" name="checkBox2">false</item>
+    <item type="id" name="layoutPreparingDocs">false</item>
+    <item type="id" name="itemLayout">false</item>
+    <item type="id" name="imgIcon">false</item>
+    <item type="id" name="tvTitle">false</item>
+    <item type="id" name="tvSubtitle">false</item>
+    <item type="id" name="btnUpdate">false</item>
+    <item type="id" name="btnStatus">false</item>
+    <item type="id" name="mr_chooser_list">false</item>
+    <item type="id" name="mr_chooser_route_icon">false</item>
+    <item type="id" name="mr_chooser_route_name">false</item>
+    <item type="id" name="mr_chooser_route_desc">false</item>
+    <item type="id" name="mr_expandable_area">false</item>
+    <item type="id" name="mr_dialog_area">false</item>
+    <item type="id" name="mr_title_bar">false</item>
+    <item type="id" name="mr_name">false</item>
+    <item type="id" name="mr_close">false</item>
+    <item type="id" name="mr_custom_control">false</item>
+    <item type="id" name="mr_default_control">false</item>
+    <item type="id" name="mr_art">false</item>
+    <item type="id" name="mr_media_main_control">false</item>
+    <item type="id" name="mr_playback_control">false</item>
+    <item type="id" name="mr_control_divider">false</item>
+    <item type="id" name="mr_volume_control">false</item>
+    <item type="id" name="mr_volume_group_list">false</item>
+    <item type="id" name="volume_item_container">false</item>
+    <item type="id" name="mr_volume_item_icon">false</item>
+    <item type="id" name="mr_volume_slider">false</item>
+    <item type="id" name="mr_control_play_pause">false</item>
+    <item type="id" name="mr_control_title_container">false</item>
+    <item type="id" name="mr_control_title">false</item>
+    <item type="id" name="mr_control_subtitle">false</item>
+    <item type="id" name="mr_group_expand_collapse">false</item>
+    <item type="id" name="action0">false</item>
+    <item type="id" name="cancel_action">false</item>
+    <item type="id" name="status_bar_latest_event_content">false</item>
+    <item type="id" name="media_actions">false</item>
+    <item type="id" name="action_divider">false</item>
+    <item type="id" name="line1">false</item>
+    <item type="id" name="time">false</item>
+    <item type="id" name="chronometer">false</item>
+    <item type="id" name="line3">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="end_padder">false</item>
+    <item type="id" name="place_autocomplete_search_button">false</item>
+    <item type="id" name="place_autocomplete_search_input">false</item>
+    <item type="id" name="place_autocomplete_clear_button">false</item>
+    <item type="id" name="place_autocomplete_separator">false</item>
+    <item type="id" name="place_autocomplete_powered_by_google">false</item>
+    <item type="id" name="place_autocomplete_progress">false</item>
+    <item type="id" name="place_autocomplete_prediction_primary_text">false</item>
+    <item type="id" name="place_autocomplete_prediction_secondary_text">false</item>
+    <item type="id" name="etSearch">false</item>
+    <item type="id" name="loadingBar">false</item>
+    <item type="id" name="action_search">false</item>
+</resources>

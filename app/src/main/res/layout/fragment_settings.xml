@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_clo"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/wrap_layout">
+
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout">
+
+            <ImageView style="@style/person" />
+
+            <TextView
+                android:id="@+id/information_update"
+                style="@style/textview"
+                android:text="@string/information_update" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line" />
+
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <ImageView style="@style/updata" />
+
+            <Switch
+                android:id="@+id/auto_update"
+                style="@style/textview"
+                android:text="@string/auto_update" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout style="@style/mid_layout">
+
+            <ImageView style="@style/wlan" />
+
+            <Switch
+                android:id="@+id/wlan_down"
+                style="@style/textview"
+                android:text="@string/wlan_down" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout style="@style/mid_layout">
+
+            <ImageView style="@style/cache" />
+
+            <TextView
+                android:id="@+id/clear_cache"
+                style="@style/textview"
+                android:text="@string/clear_cache" />
+
+            <TextView
+                android:id="@+id/clear_cache_size"
+                style="@style/textviewcache" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <LinearLayout style="@style/mid_layout">
+
+            <ImageView style="@style/night" />
+            <!--<TextView style="@style/textview" android:text="@string/night_model" android:id="@+id/night_model"
+                android:layout_width="329dp" />-->
+            <Switch
+                android:id="@+id/night_model"
+                style="@style/textview"
+                android:text="@string/night_model" />
+
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+
+            <ImageView style="@style/local" />
+
+            <TextView
+                android:id="@+id/dowm_local"
+                style="@style/textview"
+                android:text="@string/dowm_local" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout">
+
+            <ImageView style="@style/about" />
+
+            <TextView
+                android:id="@+id/about_me"
+                style="@style/textview"
+                android:text="@string/about_me" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout">
+            <!--<ImageView style="@style/about"/>-->
+            <TextView
+                android:id="@+id/logout"
+                style="@style/textview"
+                android:gravity="center"
+                android:text="@string/logout" />
+            <!--<ImageView style="@style/img_arrow"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/wvDetails" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <at.markushi.ui.CircleButton android:id="@id/btnGoBack" android:padding="15.0dip" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="20.0dip" android:src="@drawable/ic_webview_back" android:layout_alignParentBottom="true" android:alpha="0.8" app:cb_color="@color/purple" app:cb_pressedRingWidth="8.0dip" />
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

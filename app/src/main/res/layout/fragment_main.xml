@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@id/lvDocsets"
+        style="@style/ListStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:id="@id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/BigCenterImage"
+            android:contentDescription="@string/desc_imgListEmptyView"
+            android:src="@drawable/img_list_empty_view" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/bottomBar"
+        style="@style/BottomBar">
+
+        <ImageButton
+            android:id="@id/btnDocsets"
+            style="@style/BottomBarIcon"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/desc_btnDocsets"
+            android:src="@drawable/icon_docsets" />
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            style="@style/BottomBarIcon"
+            android:layout_centerHorizontal="true"
+
+            android:contentDescription="@string/desc_btnDocsets"
+            android:src="@drawable/icon_docsets"/>
+
+        <ImageButton
+            android:id="@id/btnSettings"
+            style="@style/BottomBarIcon"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/desc_btnSettings"
+            android:src="@drawable/icon_settings" />
+    </RelativeLayout>
+</LinearLayout>

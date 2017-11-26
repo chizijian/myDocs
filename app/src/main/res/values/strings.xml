@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mr_button_content_description">Cast button</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tedpermission_close">Close</string>
+    <string name="tedpermission_confirm">Confirm</string>
+    <string name="tedpermission_setting">Setting</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="action_search">Search</string>
+    <string name="app_name">Docs</string>
+    <string name="desc_btnDocsets">Docsets</string>
+    <string name="desc_btnSettings">Settings</string>
+    <string name="desc_btnStatus">List Item Status Controlled Button</string>
+    <string name="desc_imgIcon">List Item Icon</string>
+    <string name="desc_imgListEmptyView">Empty List View</string>
+    <string name="dialog_add_fetching_versions">查找最新版本。。。</string>
+    <string name="dialog_add_message">下载此版本？:</string>
+    <string name="dialog_delete_version">确认删除?</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="preparing_docset">Preparing docset, please wait..</string>
+    <string name="preparing_message">Please wait while we prepare your docsets..</string>
+    <string name="settings_item1">Mobile network</string>
+    <string name="settings_item1_sub">Allow docsets to be downloaded through mobile network. Charges may be applied by the carrier.</string>
+    <string name="settings_item2">Auto-updates</string>
+    <string name="settings_item2_sub">If enabled, docset versions marked as Latest will be automatically updated.</string>
+    <string name="tarix_upgrade">You have to upgrade the docset before you can use it.</string>
+    <string name="warning_no_internet">No internet connection.</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">邮箱格式无效</string>
+    <string name="error_invalid_password">长度太短了</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">必填项</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_regist">注册</string>
+    <string name="title_activity_forgot">找回密码</string>
+    <string name="forgot_psw"><a href='http://www.baidu.com'>?忘记密码</a></string>
+    <string name="user_regist"><a href='http://www.baidu.com'>用户注册</a></string>
+    <string name="regist_name">昵称</string>
+    <string name="regist_email">邮箱</string>
+    <string name="regist_password">密码</string>
+    <string name="second_password">确认密码</string>
+    <string name="btn_reset">重置</string>
+    <string name="btn_regist">注册</string>
+    <string name="forgot_tips">我们将发送连接到您注册时的邮箱：</string>
+    <string name="forgot_ok">确认</string>
+
+    <!-- <string name="app_name">SystemSet</string>-->
+    <string name="information_update">信息修改</string>
+    <string name="night_model">夜间模式</string>
+    <string name="wlan_down">WLAN下载</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="auto_update">自動更新</string>
+    <string name="dowm_local">下载位置</string>
+    <string name="about_me">关于我们</string>
+    <string name="text_phone_has_no_browser">Your phone has no browser.</string>
+    <string name="MODE_NIGHT_YES">夜间模式.</string>
+    <string name="MODE_NIGHT_NO">日间模式.</string>
+    <string name="YES_WLAN">禁止流量下载.</string>
+    <string name="NO_WLAN">允许流量下载.</string>
+    <string name="YES_AUTO">自動更新啓動.</string>
+    <string name="NO_AUTO">自動更新關閉.</string>
+    <string name="logout">退出登陸</string>
+
+</resources>

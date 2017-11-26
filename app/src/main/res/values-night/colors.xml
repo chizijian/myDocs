@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryNight">#000</color>
+    <color name="colorPrimaryDarkNight">#1a237e</color>
+    <color name="colorAccentNight">#c51162</color>
+
+    <!-- 描边颜色 -->
+    <color name="border_clo">#ccc</color>
+
+    <color name="text_clo">#fff</color>
+    <color name="white">#000</color>
+    <color name="blue">#419DE4</color>
+    <color name="bg_clo">#000</color>
+</resources>
